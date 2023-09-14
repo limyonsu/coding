@@ -1,0 +1,27 @@
+*{
+    padding: 1;
+    margin: 1;
+    box-sizing: border-box;
+    gap: 10px;
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    /* viewport witdh, viweport height - 화면, 브라우저 사이즈 만큼 차지할수 있다 */
+    width: 100vw;
+    height: 100vh;
+    /* 각 행이 아니라 전체에서 교차축으로 중앙정렬할때 사용 */
+    align-items: center;
+
+}
+.gallery .immage-wrapper{
+    width: calc(100% / 3);
+    /* flex-basis: (100% / 4); */
+    flex-grow: 0;
+    flex-shrink: 1;
+    padding: 10px;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+}

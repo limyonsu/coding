@@ -1,0 +1,31 @@
+a{
+    color: #222;
+    text-decoration: none;
+}
+a:visited{
+    color: aqua;
+}
+
+img{
+    display: block;
+    width: 300px;
+    height: 300px;
+    /* object-fit: contain */
+    object-fit: contain;
+    /* 비율을 무시한채로 무조건 영역에 채운다 */
+    /* 가장 빈번하게 쓰이는 속성
+    이미지를 최대한 비율을 유지하고
+    채우는데 집중하는 속성 */
+    background-color: brown;
+    /* filter: blur(10px); */
+    filter: grayscale(100%);
+    transition: all 1500m ease;
+    transform: scale(1);
+    border-radius: 50%;
+}
+img:hover{
+    filter: grayscale(0);
+    /* transition: filter 1s; */
+    cursor: pointer;
+    /* transform: scale(1.5); */
+}

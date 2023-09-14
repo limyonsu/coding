@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.pricing{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 32px;
+    padding: 1rem;
+
+}
+.pricing-item{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 2rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+}
+.pricing-item .btn{
+        --color: #41418f;
+    padding: 1rem 2rem;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid var(--color);
+    color: var(--color);
+    border-radius: 0.5rem;
+}
+button:hover{
+    background-color: blue;
+    color: white;
+}
+ul{
+    list-style: none;
+}
+.pricing-item li{
+    display: flex;
+    align-items: start;
+    padding: 0.5rem;
+    color: #424242;
+}
+.pricing-item h2{
+    font-size: 1.5rem;
+}
+.pricing-item p{
+    line-height: 1.75;
+    color: #424242 ;
+}
+.pricing-item .cost{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+.pricing-item .recomment{
+    border: 1px solid black;
+}
+.pricing-item .recomment h2{
+    color: blue;
+}
+.pricing-item .recomment .btn{
+    background-color: blue;
+    color: white;
+}
+@media (min-width: 640px) {
+    .pricing{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .pricing{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media (min-width: 1200px) {
+    .pricing{
+        grid-template-columns: repeat(4,1fr);
+    }
+}

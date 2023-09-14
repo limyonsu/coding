@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.flex{
+    background-color: bisque;
+    display: flex;
+    width: 100%;
+    height: 400px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /* 중앙정렬 축약형 */
+    margin: 0 auto;
+    justify-content: flex-end;
+    /* 자식요소들을 균등하게 배치할때 자주 스이는 속성 */
+    justify-content: center;
+    /* flex-direction: row-reverse; */
+    align-items: center;
+}
+.flex div{
+    flex-basis: calc(100%/5);
+
+}
+.container{
+    display: flex;
+    width: 100%;
+    max-width: 600px;
+    height: 400px;
+    background-color: darkgoldenrod;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    /* 줄바꿈 허용 */
+    /* align content는 여러줄일때만 작동함 */
+
+}
+.container > div{
+/* 두줄로 배치되어야 하고 한줄에 5개씩 배치되어야함 */
+flex-basis: calc( 100% / 5);
+    /* flex-grow:1; */
+}
+
+.container > div:first-child{
+    color: aliceblue ;
+    flex-basis: 40%;
+}
+
+.container > div:nth-child(7){
+    flex-basis: 60%
+}
+
+.container > div:nth-child(n+4){
+    color: white;
+}
+.container > div:nth-child(1),
+.flex > div:nth-child(1){
+     background-color: blue;
+ 
+}
+.container > div:nth-child(2),
+.flex > div:nth-child(2){
+    background-color: #363683;
+}
+.container > div:nth-child(3),
+.flex > div:nth-child(3){
+    background-color: #3a7c5d;
+}
+.container > div:nth-child(4),
+.flex > div:nth-child(4){
+    background-color: #2ee9ca;
+}
+.container > div:nth-child(5),
+.flex > div:nth-child(5){
+    background-color: #9c6b7a;
+}
+.container > div:nth-child(6),
+.flex > div:nth-child(6){
+    background-color: #b63ea2;
+}
+.container > div:nth-child(7),
+.flex > div:nth-child(7){
+    background-color: #e62fd6;
+}
+.container > div:nth-child(8),
+.flex > div:nth-child(8){
+    background-color: #b6333d;
+}
+.container > div:nth-child(9),
+.flex > div:nth-child(9){
+    background-color: rgb(7, 7, 24);
+}

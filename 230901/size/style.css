@@ -1,0 +1,43 @@
+#header{
+    font-size: 16px;
+}
+#header >h2{
+    /* 30px *2em= 60px */
+    font-size: 1em;
+}
+.list{
+    font-size: 60px;
+}
+.list li{
+    font-size: 0.8em;
+}
+.btn{
+    /* width: 50px;
+    height: 40px; */
+    padding: 0.5rem 1rem;
+    background-color: indigo;
+    border: 0;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 40px;
+    color: aqua;
+    cursor:ew-resize;
+    transition-property: all;
+    transition-duration: 200ms;
+    transition-timing-function: ease;
+    transition: all 0.5s ease;;
+}
+.btn:hover{
+    background-color: #bbb8b2;
+    color: rgb(48, 112, 48);
+}
+/* 마우스 올렸을때 나오는 표시 */
+.btn-primary{
+    background-color: blanchedalmond;
+    color: deepskyblue;
+}
+/* 버튼 눌렀을때 나오는 표시 */
+.btn:active{
+    background-color: black;
+    color:darkorange ;
+}

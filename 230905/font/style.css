@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Bitter:ital,wght@1,900&family=Black+Han+Sans&family=Nanum+Brush+Script&family=Nanum+Pen+Script&family=Stylish&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*header*/
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    /* 상하 : 0, 좌우 auto */
+}
+.brand{
+    font-family: 'Nanum Pen Script', cursive;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}

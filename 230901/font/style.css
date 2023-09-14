@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+html,bodt{
+    font-family: 'Nanum Pen Script', cursive;
+}
+@font-face {
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+.class1{
+    font-family: 'Cafe24Supermagic-Bold-v1.0';
+}
+.title{
+    font-size: 2rem;
+    /* 글자의 두께 조절하는 속석 */
+    font-weight: 100;
+    /* text-decoration: underline;
+    text-decoration: dashed;
+    text-decoration: line-through; */
+    letter-spacing: 0.5px;
+    /* line-height: 150%; */
+    line-height: 1.5;
+    /* 줄바꿈 없이 나열하는 방식 */
+    white-space: nowrap;
+}

@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box{
+    width: 300px;
+    height: 300px;
+    background-color: blue;
+}
+#static{
+    background-color:hsl(240, 36%, 66%);
+    position: static;
+    top: 100px;
+}
+/* relative 현제 위치 기준에서 움직인다. */
+#relative{
+    background-color: hsl(240, 18%, 43%);
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+/* absolute는 부모의 기준으로 기준으로 움직인다 */
+#absolute{
+    background-color: hsl(240, 16%, 18%);
+    position: absolute;
+    top: 0px;
+    left: 200px;
+}
+#fixed{
+    background-color: #16161d;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}

@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    max-width: 1024px;
+    border: 1px solid black;
+    margin: 0 auto;
+    border-radius: 2rem;
+    display: flex;
+    flex-basis: 50%;
+}
+.box{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.font{
+    padding: 1rem;
+}
+.container .box img{
+    object-fit: cover;
+}

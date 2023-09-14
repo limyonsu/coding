@@ -1,0 +1,23 @@
+.big{
+   font-size: 20px;
+   font-weight: bold;
+}
+
+.text-color{
+   color: blue;
+}
+ul{
+   background-color: aliceblue;
+}
+
+ul li{
+  background-color: yellow;
+}
+
+ul ul {
+  background-color: red;
+}
+
+ul > li > ul > li {
+  background-color- green;
+}

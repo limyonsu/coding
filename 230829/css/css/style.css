@@ -1,0 +1,21 @@
+.big{
+   font-size: 20px;
+   font-weight: bold;
+}
+.small{
+   font-size: 16px;
+   /* 백단위로 100~900의 값을 넣을 수가 있다*/
+   font-weight; 300;
+}
+
+ .text-color{
+   color: blue;
+  }
+.red{
+  color: red;
+  background: yellow;
+}
+.blue{
+  color: blue;
+  background: red;
+}

@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    max-width: 800px;
+    background-color: blanchedalmond;
+    /* align-items: flex-end; */
+}
+/* 한줄일때 정렬하는 송성(부모한테 줘야하는 속성 
+ align-items- 한줄일때 수직 정렬하는 속성
+ align-content - 두 줄 이상일때 수직 정렬하는 속성
+                    부모한테 주는 속성
+-------------------------------------------------
+align-self - 부보에서 주어진 align - items와 align-content와 통제를 벗어나서 스스로 수직 정렬하는 속성  
+*/
+.flex > div{
+    flex-grow: 1;
+}
+.stretch{
+    background-color: #5b7185;
+    /* 전체적인 흐름에서 독립적으로 움직인다 */
+    align-self: stretch;
+}
+.start{
+    background-color: blueviolet;
+    align-self: flex-start;
+}
+.center{
+    background-color: hsl(38, 17%, 30%);
+    align-self: center;
+}
+.end{
+    background-color: #6e9494;
+    align-self: self-end;
+}

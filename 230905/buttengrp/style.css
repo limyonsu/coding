@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    background-color: #d0e6de;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.button{
+    display: flex;
+    border: 1px solid #c8cece;
+    /* 모서리 깎기 */
+    border-radius: 2rem;
+    /* 모서리 깍은부분 사이즈 맞추기 */
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgb(0, 0, 0, 0.25);
+}
+.button .btn{
+    border: 0;
+    border-right: 1px solid #c8cece;
+    padding: 0.5rem 1rem;
+}
+.button .btn:last-child{
+    border-right: 0;
+}

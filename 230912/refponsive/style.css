@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.box{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-basis: 100%;
+
+}
+@media (min-width: 1024px) {
+    .flex{
+        flex-basis: calc(100%/3);
+    }
+}
+@media (min-width: 1280px) {
+    .flex{
+        flex-basis: calc(100%/4);
+    }
+}
+@media (min-width: 1400px) {
+    .flex{
+        flex-basis: calc(100%/5);
+    }
+    .flex:nth-child(7){
+        flex-basis: ;
+    }
+}

@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*header*/
+.nav{
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+}
+.brand{
+    padding-right: 2rem;
+}
+.menu-list{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}

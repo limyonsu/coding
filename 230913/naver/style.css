@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    
+   
+    border: 1px solid black;
+}
+.content{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    justify-content: center;
+    align-items: center;
+   
+}
+.content .btn{
+    border-right: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+.content .btn:hover{
+    background-color: blue;
+}

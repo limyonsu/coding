@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+
+}
+html,body{
+    font-family: 'Nanum Pen Script', cursive;
+}
+img{
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit:cover ;
+}
+body{
+    background-color: #502d2d;
+    padding: 1rem;
+}
+.card{
+    width: 100%;
+    background-color: white;
+    max-width: 400px;
+    padding: 1rem;
+    margin: 1rem auto 0;
+    border-radius: 1rem;
+    display: flex; 
+    /*플레스 하고서 가로로 다시 만들기 위함 */
+    flex-direction:column;
+    /*글씨를 중간으로 옮김 */
+    align-items: center;
+    gap: 0.25rem;
+    /* rgba = red,green,blue,alpha(투명도) */
+    /* 투명도: 1 = 100 ; 0 - 0% ; 0.5 = 50% */
+    box-shadow: 10px -10px 0px rgb(0, 0, 0, 0.2);
+    transform: translate(0px);
+    transition: all 500ms ease;
+
+}
+.avatar{
+    /* 사이즈는 128 x 128 px */
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid seagreen;
+    /* 둥글게 처리 */
+    /*3px 두께의 외각선*/
+}
+.card h2{
+    font-size: 20px;
+    margin-top: 1rem;
+}
+.card p{
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+.button{
+    /* display: inline-block; */
+    text-decoration: none;
+    background-color: hsl(0, 0%, 100%);
+    border: 0.1px solid #c9bebe;
+    border-radius: 2em;
+    color: rgb(24, 19, 19);
+    padding: 0.5rem 1.5rem;
+    gap: 0.5rem;
+    align-items: center;
+    display: flex;
+
+}
+.button:hover{
+    color: hsl(0, 0%, 100%);
+    background-color: hwb(0 0% 100%);
+}
+.icon{
+    font-size: 40px;
+    color: rgb(213, 32, 257);
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+.card button :hover ,.icon{
+    color: aliceblue;
+}
+.icon{
+    font-size: 40px;
+    color: bisque;
+}

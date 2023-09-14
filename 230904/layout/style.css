@@ -1,0 +1,32 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+img{
+    border-radius: 15px;
+    width: 100%;
+    height: 100%
+
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery .image{
+    padding: 10px;
+    flex-basis: calc(100%/4);
+}
+.gallery > .image:first-child img{
+    aspect-ratio: 2/1;
+}
+img:hover{
+    transform: scale(2);
+    transition: 3s ease-in-out;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    overflow: hidden;
+}
