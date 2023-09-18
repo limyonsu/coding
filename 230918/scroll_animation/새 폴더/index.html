@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- aos css -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <figure>
+            <img src="img/1.webp" alt="">
+        </figure>
+        <div class="content">
+            <h2>loremam</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit enim veniam molestias nisi, iusto nam
+                perspiciatis distinctio nihil voluptates perferendis quisquam, eveniet excepturi sed ratione,
+                praesentium ea aspernatur pariatur quo?</p>
+        </div>
+    </section>
+    <section>
+        <!-- data-aos-anchor-placemㄷnt 는 top-bottom 일 경우, 저기 자신의 top 부분이, 화면의 bottom을 지났을때 실행된다는 의미 -->
+        <figure data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+            <img src="img/2.webp" alt="">
+        </figure>
+        <div class="content">
+            <h2>loremam</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit enim veniam molestias nisi, iusto nam
+                perspiciatis distinctio nihil voluptates perferendis quisquam, eveniet excepturi sed ratione,
+                praesentium ea aspernatur pariatur quo?</p>
+        </div>
+    </section>
+    <section>
+        <figure>
+            <img src="img/3.jpg" alt="">
+        </figure>
+        <div class="content">
+            <h2>loremam</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit enim veniam molestias nisi, iusto nam
+                perspiciatis distinctio nihil voluptates perferendis quisquam, eveniet excepturi sed ratione,
+                praesentium ea aspernatur pariatur quo?</p>
+        </div>
+    </section>
+    <section>
+        <figure>
+            <img src="img/4.webp" alt="">
+        </figure>
+        <div class="content">
+            <h2>loremam</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit enim veniam molestias nisi, iusto nam
+                perspiciatis distinctio nihil voluptates perferendis quisquam, eveniet excepturi sed ratione,
+                praesentium ea aspernatur pariatur quo?</p>
+        </div>
+    </section>
+    <!-- aos 스르립트 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos 초기화 -->
+    <script>
+        AOS.init({
+            duration: "3000", //몇초에 걸쳐서 에니메이션 킬지
+            delay: "1000"    //몇초 후에 에니메이션 실행할지
+        });
+    </script>
+</body>
+
+</html>
