@@ -21,8 +21,15 @@ for(let i = 0; i < buttons.length; i++){
     console.log(buttons[i])
     // i번째 버튼을 클릭하면, i번째 data의 url을 콘솔로 출력
     buttons[i].addEventListener(`click`,() => {
-        console.log(data[i].url)
-        image.src = data[i].url
-        title.textContent = data[i].title
+        // console.log(data[i].url)
+        // image.src = data[i].url
+        // title.textContent = data[i].title
+        
+        //모든 버튼에서 check 클래스 제거
+        for(let j = 0; j < buttons.length; j++){
+            buttons[j].classList.remove(`check`)
+        }
+        //모든 버튼에서 check 클래스 추가
+        buttons[i].classList.add(`check`)
     })
 }
