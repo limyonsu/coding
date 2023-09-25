@@ -1,22 +1,30 @@
-const wrapper = document.querySelector(`.warpper`)
-console.log(wrapper)
+console.log('running...')
+const dot = document.querySelector('.dot')
+console.log(dot)
 
-const randomGenerator = (min, max) => {
-    return Math.floor(Math.random() * (max - min + 1) + min)
+window.addEventListener('mousemove', (event) => {
+    // console.log(`X 좌표 : ${event.clientX}`)
+    // console.log(`Y 좌표 : ${event.clientY}`)
+    // console.log(`dot의 width : ${dot.clientWidth / 2}`)
+    // console.log(`dot의 height : ${dot.clientHeight / 2}`)
+    requestAnimationFrame(() => {
+        mouseMove(event)
+    })
+})
+
+const mouseMove = (event) => {
+    dot.style.left = event.clientX - (dot.clientWidth / 2) + 'px';
+    dot.style.top = event.clientY - (dot.clientHeight / 2) + 'px';
 }
 
+window.addEventListener('click', () => {
+    // dot에게 bubble 클래스를 가진 자식요소 추가
+    const span = document.createElement('span')
+    span.classList.add('bubble')
+    dot.append(span)
 
-for(let i = 0; i < 50; i++){
-    const bokeh = document.createElement(`div`)
-    const size = randomGenerator(50, 120)
-    bokeh.style.left = randomGenerator(0,100) + `&` // 0~100%
-    bokeh.style.top = randomGenerator(0,100) + `&` // 0~100%
-    bokeh.style.animationDelay = randomGenerator(1,10)+ `&`
-    bokeh.style.transitionDuration = randomGenerator(10, 30) + `s`
-    bokeh.style.width = size + `px`
-    bokeh.style.height = size + `px`
-    bokeh.style.backgroundColor = `hsl(${randomGenerator(0,360)}, ${randomGenerator(50 , 60)}% 50)`
-    bokeh.style.filter = `blur(${randomGenerator(0,1)}px)`
-    bokeh.classList.add(`bokeh`)
-    app.append(bokeh)
-}
+    setTimeout(() => {
+        // 요소를 삭제하는 메소드
+        span.remove()
+    }, 1000)
+})
